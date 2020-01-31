@@ -24,6 +24,24 @@ snippet down "Down (down)"
 &#x2193;
 endsnippet
 
+snippet echarts "ECharts HTML basic structure" b
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="/home/jungle/node_modules/echarts/dist/echarts.common.js"></script>
+	</head>
+	<body>
+		<div id="main" style="width:600px;height:400px;"></div>
+		<script>
+		var myChart=echarts.init(document.getElementById('main'));
+		${0:body}
+		myChart.setOption(option);
+		</script>
+	</body>
+</html>
+endsnippet
+
 snippet enter "Enter (enter)"
 &#x2305;
 endsnippet
